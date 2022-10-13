@@ -13,18 +13,18 @@
 
         const randomImageApiUrl: string = "https://dog.ceo/api/breeds/image/random";
         console.log(randomImageApiUrl);
-        let data = await fetch(randomImageApiUrl)
+        await fetch(randomImageApiUrl)
         .then(function(response){
             return response.json(); 
         })
         .then(function(json: Dog){
-            // if(imageRandom != null){
-            //     console.log(json);
+            if(imageRandom != null){
+                console.log(json);
             //     // let source: HTMLSourceElement = document.createElement('source');
             //     // source.src = json.message;
 			    imageRandom.src = json.message;
-            // }
-            return json.message;
+            }
+            // return json.message;
         })
         .catch(function(error: Error){
             console.log(error);
