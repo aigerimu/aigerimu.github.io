@@ -10,7 +10,7 @@ const config = {
 	kit: {
 		adapter: adapter(),
 		paths: {
-			base: dev ? '' : '/your-repo-name',
+			base: dev ? '' : '/aigerimu.github.io',
 		  },
 		// prerender: {
 		// 	// entries:[],
