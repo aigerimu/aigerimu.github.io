@@ -10,6 +10,14 @@
 		<meta http-equiv="content-security-policy" content="">
 		<link href="./_app/immutable/assets/_layout-4af688a2.css" rel="stylesheet">
 		<link href="./_app/immutable/assets/_page-98889708.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/start-a6552e20.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index-dc6137a2.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/singletons-2af11684.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/paths-6cd3a76e.js">
+		<link rel="modulepreload" href="./_app/immutable/components/pages/_layout.svelte-8b293d1c.js">
+		<link rel="modulepreload" href="./_app/immutable/components/pages/randog/_page.svelte-f695352f.js">
+		<link rel="modulepreload" href="./_app/immutable/modules/pages/randog/_page.ts-12a4c494.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/_page-a1969a02.js">
 	</head>
 	<body data-sveltekit-prefetch>
 		<div>
@@ -28,6 +36,8 @@
     <button id="btn-dog" class="svelte-15wtvmi">Get a dog ;)</button>
 </div>
 
+
+
 <div id="contact" class="contact svelte-8uenfs"><h2 class="svelte-8uenfs">Contact Me</h2>
 
 	<div class="card svelte-8uenfs"><a class="btn" href="mailto:gilmanovab@gmail.com"><i class="card-icon far fa-envelope svelte-8uenfs"></i></a>
@@ -43,6 +53,26 @@
 		<p>LinkedIn</p></div></div>
 <hr>
 
-</div>
+
+		<script type="module" data-sveltekit-hydrate="13c020f">
+			import { start } from "./_app/immutable/start-a6552e20.js";
+
+			start({
+				env: {},
+				hydrate: {
+					status: 200,
+					error: null,
+					node_ids: [0, 3],
+					params: {},
+					routeId: "randog",
+					data: (function(a){return [a,a]}(null)),
+					form: null
+				},
+				paths: {"base":"","assets":""},
+				target: document.querySelector('[data-sveltekit-hydrate="13c020f"]').parentNode,
+				trailing_slash: "never"
+			});
+		</script>
+	</div>
 	</body>
 </html>
