@@ -64,7 +64,7 @@
     padding-top: 8em;
 }
 
-.api-dog-img{
+.api-dog img{
     /* margin-top: ; */
 	display:block;
     position:top;
