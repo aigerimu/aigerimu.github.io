@@ -1,4 +1,4 @@
-// const dev = process.env.NODE_ENV === 'development';
+const dev = process.env.NODE_ENV === 'development';
 import adapter from '@sveltejs/adapter-static';
 import preprocess from 'svelte-preprocess';
 
@@ -9,6 +9,9 @@ const config = {
 
 	kit: {
 		adapter: adapter(),
+		paths: {
+			base: dev ? '' : '/your-repo-name',
+		  },
 		// prerender: {
 		// 	// entries:[],
 		// 	default: true
