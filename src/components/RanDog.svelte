@@ -40,7 +40,7 @@
 </script>
 
 <div class="api-dog">
-    <div id="rand" />
+    <img id="rand" src="" alt=":("/>
     <button id="btn-dog" on:click={getRandomImage}>Get a dog ;)</button>
 </div>
 
