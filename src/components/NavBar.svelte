@@ -7,8 +7,8 @@
 		<NavComponent text={'Home'} link={''} />
 		<NavComponent text={'RANDOM DOG API'} link={'randog'} />
 		
-		<a class="nav-link" href="/#skills">Skills</a>
-		<a class="nav-link" href="#contact">Contact</a>
+		<a class="nav-link" href="./#skills">Skills</a>
+		<a class="nav-link" href="./#contact">Contact</a>
 
 	<div class="logo">Aigerim Gilmanova</div>
     </div>
