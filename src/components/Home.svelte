@@ -9,11 +9,11 @@
 
 	<p>This is my personal website to show my work experince, projects and skills.</p>
 
-	<!-- <div class="cv">  
-		<a href="/files/Aigerim_Gilmanova.pdf" download="">
+	<div class="cv">  
+		<a href="/files/Aigerim_Gilmanova2.pdf" download="">
 			<input type="button" value="Download CV">
 		</a>
-	</div> -->
+	</div>
 </div>
 <hr>
 
