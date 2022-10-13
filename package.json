@@ -84,5 +84,6 @@
 	},
 	"setupFilesAfterEnv": [
 		"@testing-library/jest-dom/extend-expect"
-	]
+	],
+	"deploy": "touch ./output_folder/.nojekyll && gh-pages -d output_folder -t true"
 }
