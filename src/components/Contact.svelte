@@ -1,3 +1,7 @@
+<script>
+	export const prerender = true;
+</script>
+
 <div id="contact" class="contact">
 	<h2>Contact Me</h2>
 

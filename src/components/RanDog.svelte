@@ -1,6 +1,9 @@
 <script lang="ts">
-// "@ts-strict";
-// import _ from "lodash-es";
+    // import { JSDOM } from "jsdom";
+
+    // const dom = new JSDOM();
+    // global.document = dom.window.document;
+    // global.Node = dom.window.Node;
 
 interface Dog {
     message: string;
