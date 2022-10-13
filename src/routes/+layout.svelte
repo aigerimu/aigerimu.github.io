@@ -1,5 +1,5 @@
 <script lang="ts" context="module">
-	export const prerender = true;
+	// export const prerender = true;
   	import NavBar from '../components/NavBar.svelte';
   	import Contact from '../components/Contact.svelte';
 	import './styles.css';

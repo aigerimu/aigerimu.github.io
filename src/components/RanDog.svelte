@@ -1,44 +1,52 @@
 <script lang="ts">
-    import { onMount } from 'svelte';
+  import { doc } from "prettier";
+
+
+    // import { onMount } from 'svelte';
     
     
     interface Dog {
         message: string;
         status: string;
     }
-    let imageRandom : HTMLImageElement;
-    async function getRandomImage(): Promise<void>{
+
+    getRandomImage();
     
-        onMount(() => {
-            imageRandom = document.getElementById("imageRandom") as HTMLImageElement;
-                
-        });
+    async function getRandomImage(): Promise<void>{
+        
+        let imageRandom : HTMLImageElement;
+
         const randomImageApiUrl: string = "https://dog.ceo/api/breeds/image/random";
         console.log(randomImageApiUrl);
-        await fetch(randomImageApiUrl)
+        let data = await fetch(randomImageApiUrl)
         .then(function(response){
             return response.json(); 
         })
         .then(function(json: Dog){
-            if(imageRandom != null){
-                console.log(json);
-                imageRandom.src = json.message;
-            }
+            // if(imageRandom != null){
+            //     console.log(json);
+            //     // let source: HTMLSourceElement = document.createElement('source');
+            //     // source.src = json.message;
+            //     imageRandom = document.createElement('img');
+			//     imageRandom.src = json.message;
+            // }
+            return json.message;
         })
         .catch(function(error: Error){
             console.log(error);
         });
+        imageRandom = document.createElement('img');
+        if(data){
+            imageRandom.src = data;
+        }
+		document.getElementsByClassName('rand')[0].appendChild(imageRandom);
     }
 
-    getRandomImage();
     
 </script>
 
 <div class="api-dog">
-    <div id="rand">
-
-        <img id="imageRandom" class="api-dog-img" src="" alt="click the button below">
-    </div>
+    <div id="rand" />
     <button id="btn-dog" on:click={getRandomImage}>Get a dog ;)</button>
 </div>
 
