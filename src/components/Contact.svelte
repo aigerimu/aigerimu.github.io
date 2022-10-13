@@ -1,6 +1,6 @@
-<script>
+<!-- <script>
 	export const prerender = true;
-</script>
+</script> -->
 
 <div id="contact" class="contact">
 	<h2>Contact Me</h2>
