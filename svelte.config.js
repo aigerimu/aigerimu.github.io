@@ -10,9 +10,9 @@ const config = {
 
 	kit: {
 		adapter: adapter(),
-		// prerender: {
-		// 	default: true
-		// }
+		prerender: {
+			default: true
+		}
 	}
 };
 
