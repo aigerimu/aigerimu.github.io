@@ -4,8 +4,8 @@
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
-		"package": "svelte-kit package",
-		"preview": "svelte-kit preview",
+		"package": "vite package",
+		"preview": "vite preview",
 		"prepare": "svelte-kit sync && husky install",
 		"check": "svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",

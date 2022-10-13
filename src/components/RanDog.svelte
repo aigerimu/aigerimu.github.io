@@ -1,35 +1,37 @@
 <script lang="ts">
-    // import { JSDOM } from "jsdom";
+    import { onMount } from 'svelte';
+    
+    
+    interface Dog {
+        message: string;
+        status: string;
+    }
+    let imageRandom : HTMLImageElement;
+    async function getRandomImage(): Promise<void>{
+    
+        onMount(() => {
+            imageRandom = document.getElementById("imageRandom") as HTMLImageElement;
+                
+        });
+        const randomImageApiUrl: string = "https://dog.ceo/api/breeds/image/random";
+        console.log(randomImageApiUrl);
+        await fetch(randomImageApiUrl)
+        .then(function(response){
+            return response.json(); 
+        })
+        .then(function(json: Dog){
+            if(imageRandom != null){
+                console.log(json);
+                imageRandom.src = json.message;
+            }
+        })
+        .catch(function(error: Error){
+            console.log(error);
+        });
+    }
 
-    // const dom = new JSDOM();
-    // global.document = dom.window.document;
-    // global.Node = dom.window.Node;
-
-interface Dog {
-    message: string;
-    status: string;
-}
-
-
-getRandomImage();
-async function getRandomImage(): Promise<void>{
-    let imageRandom = document.getElementById("imageRandom") as HTMLImageElement;
-    const randomImageApiUrl: string = "https://dog.ceo/api/breeds/image/random";
-    console.log(randomImageApiUrl);
-    await fetch(randomImageApiUrl)
-    .then(function(response){
-        return response.json(); 
-    })
-    .then(function(json: Dog){
-        if(imageRandom != null){
-            console.log(json);
-            imageRandom.src = json.message;
-        }
-    })
-    .catch(function(error: Error){
-        console.log(error);
-    });
-}
+    getRandomImage();
+    
 </script>
 
 <div class="api-dog">
