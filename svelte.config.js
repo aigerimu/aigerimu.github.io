@@ -1,4 +1,4 @@
-const dev = process.env.NODE_ENV === 'development';
+import adapter from '@sveltejs/adapter-static';
 import preprocess from 'svelte-preprocess';
 
 /** @type {import('@sveltejs/kit').Config} */
@@ -8,12 +8,15 @@ const config = {
 	// for more information about preprocessors
 	preprocess: preprocess(),
 
-	paths: {
-		base: dev ? '' : '/aigerimu.github.io',
-	},
-	// If you are not using a .nojekyll file, change your appDir to something not starting with an underscore.
-	// For example, instead of '_app', use 'app_', 'internal', etc.
-	appDir: '_app',
+	kit: {
+		adapter: adapter(),
+		// prerender: {
+		// 	default: true
+		// }
+	}
 };
+
+// config.kit.prerender.default = true;
+
 
 export default config;
