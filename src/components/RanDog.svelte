@@ -1,9 +1,4 @@
 <script lang="ts">
-  import { doc } from "prettier";
-
-
-    // import { onMount } from 'svelte';
-    
     
     interface Dog {
         message: string;
@@ -14,7 +9,7 @@
     
     async function getRandomImage(): Promise<void>{
         
-        let imageRandom : HTMLImageElement;
+        let imageRandom = document.getElementById('rand') as HTMLImageElement;
 
         const randomImageApiUrl: string = "https://dog.ceo/api/breeds/image/random";
         console.log(randomImageApiUrl);
@@ -27,19 +22,18 @@
             //     console.log(json);
             //     // let source: HTMLSourceElement = document.createElement('source');
             //     // source.src = json.message;
-            //     imageRandom = document.createElement('img');
-			//     imageRandom.src = json.message;
+			    imageRandom.src = json.message;
             // }
             return json.message;
         })
         .catch(function(error: Error){
             console.log(error);
         });
-        imageRandom = document.createElement('img');
-        if(data){
-            imageRandom.src = data;
-        }
-		document.getElementsByClassName('rand')[0].appendChild(imageRandom);
+        // imageRandom = document.createElement('img');
+        // if(data){
+        //     imageRandom.src = data;
+        // }
+		// document.getElementsByClassName('rand')[0].appendChild(imageRandom);
     }
 
     
