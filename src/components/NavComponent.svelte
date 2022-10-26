@@ -7,14 +7,14 @@
 <a class="nav-link" href="{base}/{link}">{text}</a>
 
 <style>
-.nav-link{
-	color: #FEFBF6;
-	display: block;
-	position: relative;
-	left: 34em;
-	/* position:absolute; */
-	justify-content: space-between;
-	margin-left: 2em;
-	padding: 0;
-}
+	.nav-link {
+		color: #fefbf6;
+		display: block;
+		position: relative;
+		left: 34em;
+		/* position:absolute; */
+		justify-content: space-between;
+		margin-left: 2em;
+		padding: 0;
+	}
 </style>

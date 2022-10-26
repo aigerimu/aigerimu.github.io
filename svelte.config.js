@@ -4,7 +4,6 @@ import preprocess from 'svelte-preprocess';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-
 	preprocess: preprocess(),
 
 	kit: {
@@ -17,7 +16,7 @@ const config = {
 		// 	default: true
 		// },
 
-		appDir: 'internal',
+		appDir: 'internal'
 	}
 };
 

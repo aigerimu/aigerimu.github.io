@@ -1,0 +1,216 @@
+[
+	{
+		"filePath": "/Users/ikramkamat/aigerimu.github.io/src/app.d.ts",
+		"messages": [],
+		"suppressedMessages": [],
+		"errorCount": 0,
+		"fatalErrorCount": 0,
+		"warningCount": 0,
+		"fixableErrorCount": 0,
+		"fixableWarningCount": 0,
+		"usedDeprecatedRules": []
+	},
+	{
+		"filePath": "/Users/ikramkamat/aigerimu.github.io/src/components/Contact.svelte",
+		"messages": [],
+		"suppressedMessages": [],
+		"errorCount": 0,
+		"fatalErrorCount": 0,
+		"warningCount": 0,
+		"fixableErrorCount": 0,
+		"fixableWarningCount": 0,
+		"usedDeprecatedRules": []
+	},
+	{
+		"filePath": "/Users/ikramkamat/aigerimu.github.io/src/components/Home.svelte",
+		"messages": [
+			{
+				"ruleId": "css-unused-selector",
+				"severity": 1,
+				"message": "Unused CSS selector \"body\"",
+				"line": 121,
+				"column": 2,
+				"endLine": 121,
+				"endColumn": 6
+			},
+			{
+				"ruleId": "css-unused-selector",
+				"severity": 1,
+				"message": "Unused CSS selector \".skills li\"",
+				"line": 201,
+				"column": 2,
+				"endLine": 201,
+				"endColumn": 12
+			},
+			{
+				"ruleId": "css-unused-selector",
+				"severity": 1,
+				"message": "Unused CSS selector \".contact\"",
+				"line": 299,
+				"column": 2,
+				"endLine": 299,
+				"endColumn": 10
+			},
+			{
+				"ruleId": "css-unused-selector",
+				"severity": 1,
+				"message": "Unused CSS selector \".card\"",
+				"line": 310,
+				"column": 2,
+				"endLine": 310,
+				"endColumn": 7
+			},
+			{
+				"ruleId": "css-unused-selector",
+				"severity": 1,
+				"message": "Unused CSS selector \".card:hover .card-icon\"",
+				"line": 332,
+				"column": 2,
+				"endLine": 332,
+				"endColumn": 24
+			}
+		],
+		"suppressedMessages": [],
+		"errorCount": 0,
+		"fatalErrorCount": 0,
+		"warningCount": 5,
+		"fixableErrorCount": 0,
+		"fixableWarningCount": 0,
+		"source": "<div class=\"top\">\n\t<img\n\t\tclass=\"profile_pic circle_pic\"\n\t\tsrc=\"images/pic2.png\"\n\t\talt=\"pic\"\n\t\tstyle=\"border: 3px solid #353b48;\"\n\t/>\n\t<h1>Aigerim Gilmanova</h1>\n\t<p>AI/ML Researcher</p>\n</div>\n\n<div class=\"profile\">\n\t<p>This is my personal website to show my work experince, projects and skills.</p>\n\n\t<div class=\"cv\">\n\t\t<a href=\"/files/Aigerim_Gilmanova2.pdf\" download=\"\">\n\t\t\t<input type=\"button\" value=\"Download CV\" />\n\t\t</a>\n\t</div>\n</div>\n<hr />\n\n<div class=\"skills\" id=\"skills\">\n\t<h2>My Skills</h2>\n\n\t<h3>python</h3>\n\t<span class=\"bar\"><span class=\"python\" /></span>\n\n\t<h3>java</h3>\n\t<span class=\"bar\"><span class=\"java\" /></span>\n\n\t<h3>cpp</h3>\n\t<span class=\"bar\"><span class=\"cpp\" /></span>\n\n\t<h3>matlab</h3>\n\t<span class=\"bar\"><span class=\"matlab\" /></span>\n</div>\n<hr />\n\n<div id=\"proj\" class=\"projects\">\n\t<h2>My Projects</h2>\n\t<div class=\"project-row\">\n\t\t<a href=\"https://github.com/aigerimu/Surgical-Instrument-tracking\"\n\t\t\t><h3>Surgical Instrument Tracking</h3></a\n\t\t>\n\t\t<p>A model that tracks surgical instruments.</p>\n\t\t<ul>\n\t\t\t<h6>\n\t\t\t\t<li>\n\t\t\t\t\tReduced noise by Gaussian filter with different sigma and detected surgical instruments\n\t\t\t\t\tusing Otsu‘s method.\n\t\t\t\t</li>\n\t\t\t\t<li>Involved in creating surgical instrument dataset using Roboflow.</li>\n\t\t\t\t<li>Trained fully based CNN model (YOLOv5).</li>\n\t\t\t</h6>\n\t\t</ul>\n\t</div>\n\n\t<div class=\"project-row\">\n\t\t<a href=\"https://github.com/aigerimu/ML_A2\"><h3>Network Intrusions Clustering</h3></a>\n\t\t<p>A notebook that clusters network intrusions by using unsupervised approach.</p>\n\t\t<ul>\n\t\t\t<h6>\n\t\t\t\t<li>Preprocessed data and visualized it using PCA.</li>\n\t\t\t\t<li>\n\t\t\t\t\tImplemented K-Mean and DBSCAN models to cluster networks including Elbow and Silhouette\n\t\t\t\t\tmethods as hyperparameters.\n\t\t\t\t</li>\n\t\t\t\t<li>Detected outliers.</li>\n\t\t\t</h6>\n\t\t</ul>\n\t</div>\n\n\t<div class=\"project-row\">\n\t\t<a href=\"https://github.com/aigerimu/ML_A2\"><h3>Human Iris Center Calculation</h3></a>\n\t\t<p>A CNN model that calculates human iris center.</p>\n\t\t<ul>\n\t\t\t<h6>\n\t\t\t\t<li>Visualized images, normalized them and cropped eye regions.</li>\n\t\t\t\t<li>\n\t\t\t\t\tBuilt a CNN model including different combinations of different optimizers, loss and\n\t\t\t\t\tactivations functions\n\t\t\t\t</li>\n\t\t\t</h6>\n\t\t</ul>\n\t</div>\n\n\t<div class=\"project-row\">\n\t\t<a href=\"https://github.com/aigerimu/HW2/blob/main/HW2.ipynb\"><h3>Camera Calibration</h3></a>\n\t\t<p>A notebook that calibrates camera using chessboard pattern.</p>\n\t\t<ul>\n\t\t\t<h6>\n\t\t\t\t<li>Calibrated camera.</li>\n\t\t\t\t<li>\n\t\t\t\t\tEstimated height and width of another object by using calibrated camera, and calculated\n\t\t\t\t\tthe distance between the camera and object.\n\t\t\t\t</li>\n\t\t\t</h6>\n\t\t</ul>\n\t</div>\n\n\t<div class=\"project-row\">\n\t\t<h3>Quadcopter</h3>\n\t\t<ul>\n\t\t\t<h6>\n\t\t\t\t<li>Implemented PID Controller.</li>\n\t\t\t\t<li>Soldered electronics.</li>\n\t\t\t</h6>\n\t\t</ul>\n\t</div>\n\n\t<h2>\n\t\tMore projects can be seen on GitHub <a href=\"https://github.com/aigerimu\"\n\t\t\t><i class=\"card-icon fab fa-github\" /></a\n\t\t>\n\t</h2>\n</div>\n<hr />\n\n<style>\n\tbody {\n\t\tbackground: #3d3c42;\n\t\ttext-transform: uppercase;\n\t\tfont-family: none;\n\t\tcolor: #40514e;\n\t\tmargin: 0;\n\t\ttext-align: center;\n\t\tfont-family: 'Merriweather';\n\t}\n\n\th1 {\n\t\tcolor: #7f5283;\n\t\tfont-size: 2.625rem;\n\t\tmargin: 50px auto 0 auto;\n\t\tmargin: 0 auto;\n\t}\n\n\th2 {\n\t\tcolor: #fefbf6;\n\t}\n\n\th3 {\n\t\tmargin: 50px auto 0 auto;\n\t}\n\n\tp {\n\t\tcolor: #a6d1e6;\n\t}\n\n\t.top {\n\t\tmargin: 0 auto;\n\t\tbackground-color: #fefbf6;\n\t\tposition: initial;\n\t\twidth: 100%;\n\t\tpadding-top: 100px;\n\t\tpadding-bottom: 100px;\n\t}\n\n\t.cv a {\n\t\tmargin: 10px 100px;\n\t\ttext-decoration: none;\n\t\tdisplay: inline-flex;\n\t\talign-items: center;\n\t\tbackground: #a6d1e6;\n\t\tborder-radius: 5px;\n\t\tborder: 2px solid black;\n\t\tfont-size: 12px;\n\t}\n\n\t.profile {\n\t\tcolor: #fefbf6;\n\t}\n\n\t.profile_pic {\n\t\tdisplay: block;\n\t\tmax-width: 15%;\n\t\theight: 50%;\n\t}\n\n\t.profile p {\n\t\tmargin-top: 2em;\n\t}\n\n\t.circle_pic {\n\t\tmargin: auto;\n\t\tborder-radius: 50%;\n\t}\n\n\tul li {\n\t\tmargin: 5px;\n\t}\n\n\t.skills {\n\t\twidth: 500px;\n\t\tmargin: 60px auto;\n\t\tcolor: #fff;\n\t\tpadding: 20px;\n\t\tbox-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);\n\t}\n\n\t.skills li {\n\t\tmargin: 20px 0;\n\t\tpadding: 10px;\n\t}\n\n\t.bar {\n\t\tbackground: #353b48;\n\t\tdisplay: block;\n\t\theight: 20px;\n\t\tborder: 1px solid rgba(0, 0, 0, 0.3);\n\t\tborder-radius: 10px;\n\t\toverflow: hidden;\n\t\tbox-shadow: 0 14px 28px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);\n\t\ttransition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);\n\t}\n\n\t.bar:hover {\n\t\tbox-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);\n\t}\n\n\t.bar span {\n\t\theight: 20px;\n\t\tfloat: left;\n\t\tbackground: linear-gradient(135deg, rgba(236, 0, 140, 1) 0%, rgba(252, 103, 103, 1) 100%);\n\t}\n\n\t.python {\n\t\twidth: 90%;\n\t\tanimation: python 3s;\n\t}\n\n\t.java {\n\t\twidth: 90%;\n\t\tanimation: java 3s;\n\t}\n\n\t.cpp {\n\t\twidth: 50%;\n\t\tanimation: cpp 3s;\n\t}\n\n\t.matlab {\n\t\twidth: 70%;\n\t\tanimation: matlab 3s;\n\t}\n\n\t@keyframes python {\n\t\t0% {\n\t\t\twidth: 0%;\n\t\t}\n\t\t100% {\n\t\t\twidth: 90%;\n\t\t}\n\t}\n\n\t@keyframes java {\n\t\t0% {\n\t\t\twidth: 0%;\n\t\t}\n\t\t100% {\n\t\t\twidth: 90%;\n\t\t}\n\t}\n\n\t@keyframes cpp {\n\t\t0% {\n\t\t\twidth: 0%;\n\t\t}\n\t\t100% {\n\t\t\twidth: 50%;\n\t\t}\n\t}\n\n\t@keyframes matlab {\n\t\t0% {\n\t\t\twidth: 0%;\n\t\t}\n\t\t100% {\n\t\t\twidth: 70%;\n\t\t}\n\t}\n\n\t.projects {\n\t\tmargin: 20px;\n\t\tcolor: #fefbf6;\n\t}\n\n\t.projects a {\n\t\tcolor: #fefbf6;\n\t}\n\n\t.project-row {\n\t\tpadding: 10px;\n\t\tfont-family: serif;\n\t\twidth: 50%;\n\t\ttext-align: left;\n\t}\n\n\t.contact {\n\t\tmargin: 20px;\n\t\tdisplay: flex;\n\t\twidth: 100%;\n\t\tmax-width: 1200px;\n\t\talign-items: center;\n\t\tjustify-content: center;\n\t\tpadding: 0 20px;\n\t\tcursor: pointer;\n\t}\n\n\t.card {\n\t\tbackground: #2f3542;\n\t\tpadding: 0 20px;\n\t\tmargin: 0 10px;\n\t\twidth: calc(33% - 20px);\n\t\theight: 200px;\n\t\tdisplay: flex;\n\t\tflex-direction: column;\n\t\tjustify-content: center;\n\t\talign-items: center;\n\t}\n\n\t.card-icon {\n\t\tfont-size: 28px;\n\t\twidth: 60px;\n\t\theight: 60px;\n\t\ttext-align: center;\n\t\tline-height: 60px !important;\n\t\tborder-radius: 50%;\n\t\ttransition: 0.3s linear;\n\t}\n\n\t.card:hover .card-icon {\n\t\tbackground: none;\n\t\ttransform: scale(1.6);\n\t}\n</style>\n",
+		"usedDeprecatedRules": []
+	},
+	{
+		"filePath": "/Users/ikramkamat/aigerimu.github.io/src/components/NavBar.svelte",
+		"messages": [],
+		"suppressedMessages": [],
+		"errorCount": 0,
+		"fatalErrorCount": 0,
+		"warningCount": 0,
+		"fixableErrorCount": 0,
+		"fixableWarningCount": 0,
+		"usedDeprecatedRules": []
+	},
+	{
+		"filePath": "/Users/ikramkamat/aigerimu.github.io/src/components/NavComponent.svelte",
+		"messages": [],
+		"suppressedMessages": [],
+		"errorCount": 0,
+		"fatalErrorCount": 0,
+		"warningCount": 0,
+		"fixableErrorCount": 0,
+		"fixableWarningCount": 0,
+		"usedDeprecatedRules": []
+	},
+	{
+		"filePath": "/Users/ikramkamat/aigerimu.github.io/src/components/RanDog.svelte",
+		"messages": [],
+		"suppressedMessages": [],
+		"errorCount": 0,
+		"fatalErrorCount": 0,
+		"warningCount": 0,
+		"fixableErrorCount": 0,
+		"fixableWarningCount": 0,
+		"usedDeprecatedRules": []
+	},
+	{
+		"filePath": "/Users/ikramkamat/aigerimu.github.io/src/global.d.ts",
+		"messages": [],
+		"suppressedMessages": [],
+		"errorCount": 0,
+		"fatalErrorCount": 0,
+		"warningCount": 0,
+		"fixableErrorCount": 0,
+		"fixableWarningCount": 0,
+		"usedDeprecatedRules": []
+	},
+	{
+		"filePath": "/Users/ikramkamat/aigerimu.github.io/src/routes/+layout.svelte",
+		"messages": [],
+		"suppressedMessages": [],
+		"errorCount": 0,
+		"fatalErrorCount": 0,
+		"warningCount": 0,
+		"fixableErrorCount": 0,
+		"fixableWarningCount": 0,
+		"usedDeprecatedRules": []
+	},
+	{
+		"filePath": "/Users/ikramkamat/aigerimu.github.io/src/routes/+page.svelte",
+		"messages": [],
+		"suppressedMessages": [],
+		"errorCount": 0,
+		"fatalErrorCount": 0,
+		"warningCount": 0,
+		"fixableErrorCount": 0,
+		"fixableWarningCount": 0,
+		"usedDeprecatedRules": []
+	},
+	{
+		"filePath": "/Users/ikramkamat/aigerimu.github.io/src/routes/+page.ts",
+		"messages": [],
+		"suppressedMessages": [],
+		"errorCount": 0,
+		"fatalErrorCount": 0,
+		"warningCount": 0,
+		"fixableErrorCount": 0,
+		"fixableWarningCount": 0,
+		"usedDeprecatedRules": []
+	},
+	{
+		"filePath": "/Users/ikramkamat/aigerimu.github.io/src/routes/randog/+page.svelte",
+		"messages": [],
+		"suppressedMessages": [],
+		"errorCount": 0,
+		"fatalErrorCount": 0,
+		"warningCount": 0,
+		"fixableErrorCount": 0,
+		"fixableWarningCount": 0,
+		"usedDeprecatedRules": []
+	},
+	{
+		"filePath": "/Users/ikramkamat/aigerimu.github.io/src/routes/randog/+page.ts",
+		"messages": [
+			{
+				"ruleId": "@typescript-eslint/no-unused-vars",
+				"severity": 1,
+				"message": "'dev' is defined but never used.",
+				"line": 1,
+				"column": 10,
+				"nodeType": "Identifier",
+				"messageId": "unusedVar",
+				"endLine": 1,
+				"endColumn": 13
+			}
+		],
+		"suppressedMessages": [],
+		"errorCount": 0,
+		"fatalErrorCount": 0,
+		"warningCount": 1,
+		"fixableErrorCount": 0,
+		"fixableWarningCount": 0,
+		"source": "import { dev } from '$app/environment';\n\n// we don't need any JS on this page, though we'll load\n// it in dev so that we get hot module replacement\n// export const csr = true;\n\n// since there's no dynamic data here, we can prerender\n// it so that it gets served as a static asset in production\nexport const prerender = true;\nexport const csr = true;\n// export const ssr = false;\n",
+		"usedDeprecatedRules": []
+	},
+	{
+		"filePath": "/Users/ikramkamat/aigerimu.github.io/svelte.config.js",
+		"messages": [],
+		"suppressedMessages": [],
+		"errorCount": 0,
+		"fatalErrorCount": 0,
+		"warningCount": 0,
+		"fixableErrorCount": 0,
+		"fixableWarningCount": 0,
+		"usedDeprecatedRules": []
+	},
+	{
+		"filePath": "/Users/ikramkamat/aigerimu.github.io/vite.config.ts",
+		"messages": [],
+		"suppressedMessages": [],
+		"errorCount": 0,
+		"fatalErrorCount": 0,
+		"warningCount": 0,
+		"fixableErrorCount": 0,
+		"fixableWarningCount": 0,
+		"usedDeprecatedRules": []
+	}
+]
