@@ -1,5 +1,5 @@
 <div class="top">
-	<img class="profile_pic circle_pic" src="/images/pic2.png" alt="pic" style="border: 3px solid #353b48;">
+	<img class="profile_pic circle_pic" src="images/pic2.png" alt="pic" style="border: 3px solid #353b48;">
 	<h1>Aigerim Gilmanova</h1>
 	<p>AI/ML Researcher</p>
 </div>
